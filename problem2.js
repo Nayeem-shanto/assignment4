@@ -1,13 +1,19 @@
 function  onlyCharacter( str ) {
-    // let splitCharacter =[];
-    if(typeof(str)=== "string"){
-        let splitCharacter= str.split('');
-        return splitCharacter;
+    if(typeof(str)!== "string"){
+        return "Invalid";
         
 
     }   
     else{
-        return "Invalid";
+      const splitCharacter = str.split(" ");
+      const joinCharacter = splitCharacter.join("");
+      const upperCase = joinCharacter.toUpperCase();
+      return upperCase;
     }   
 }
 console.log(onlyCharacter(" h e llo wor ld"));
+console.log(onlyCharacter("Cy   bar- At  tac k  "))
+console.log(onlyCharacter(" ha ck m e 1 @ru.c  n  "))
+console.log(onlyCharacter("Serv er : : Do wn"))
+console.log(onlyCharacter(["hack", "me"]))
+console.log(onlyCharacter(["hack", "me"]))
