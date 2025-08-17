@@ -74,7 +74,4 @@ console.log(bestTeam({ name: "Germany", foul: 10, cardY: 1, cardR: 1 },
 { name: "France", foul: 10, cardY: 2, cardR: 1 }))
 
 console.log(bestTeam({ name: "Germany", foul: 10, cardY: 1, cardR: 1 },"France"
-
-
-
 ))
